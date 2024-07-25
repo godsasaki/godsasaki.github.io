@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>漫画の画像ギャラリー</title>
+    <style>
+        /* スタイルはここに記述します */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
 
+<div class="container">
+    <h1>漫画の画像ギャラリー</h1>
+    
+    <div class="gallery">
+        <img src="images/manga1.jpg" alt="漫画1">
+        <img src="images/manga2.jpg" alt="漫画2">
+        <img src="images/manga3.jpg" alt="漫画3">
+        <!-- 必要な分だけ画像を追加してください -->
+    </div>
+</div>
+
+</body>
+</html>
